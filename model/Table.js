@@ -10,15 +10,19 @@ const tableSchema = new mongoose.Schema({
   },
   mobileNumber: {
     type: Number,
-    required: true
+    required: true,
+    unique: true
+    
   },
   whatsAppNumber: {
     type: Number,
-    required: true
+    required: true,
+    unique: true
   },
   panNumber: {
     type: Number,
-    required: true
+    required: true,
+    unique: true
   },
   type: {
     type: [String],
